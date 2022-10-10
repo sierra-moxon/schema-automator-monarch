@@ -1,0 +1,6 @@
+name: schema_automator_monarch
+author: Sierra Moxon <smoxon@lbl.gov>
+description: This is the project description.
+source_schema_path: src/schema_automator_monarch/schema/schema_automator_monarch.yaml
+google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+google_sheet_tabs: personinfo enums

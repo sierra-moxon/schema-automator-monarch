@@ -1,0 +1,28 @@
+{
+  "template": "https://github.com/linkml/linkml-project-cookiecutter",
+  "commit": "bf6174ec790768103020ae1a1e1f1364ae339295",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "schema-automator-monarch",
+      "__project_slug": "schema_automator_monarch",
+      "github_org": "sierra-moxon",
+      "__source_path": "src/schema_automator_monarch/schema/schema_automator_monarch.yaml",
+      "project_description": "This is the project description.",
+      "full_name": "Sierra Moxon",
+      "email": "smoxon@lbl.gov",
+      "__author": "Sierra Moxon <smoxon@lbl.gov>",
+      "license": "MIT",
+      "google_analytics_gtag": "G-2SYBSJVZ23",
+      "main_schema_class": "Person",
+      "create_python_classes": "Yes",
+      "use_schemasheets": "No",
+      "google_sheet_id": "1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ",
+      "google_sheet_tabs": "personinfo enums",
+      "__google_sheet_module": "personinfo_enums",
+      "github_token_for_pypi_deployment": "PYPI_PASSWORD",
+      "_template": "https://github.com/linkml/linkml-project-cookiecutter"
+    }
+  },
+  "directory": null
+}
