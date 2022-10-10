@@ -1,0 +1,251 @@
+name: MySchema
+description: MySchema
+id: https://w3id.org/MySchema
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  MySchema: https://w3id.org/MySchema
+default_prefix: MySchema
+types:
+  identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+  biolink identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+  NCBITaxon identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+  infores identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+  SO identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+  HP identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+  PATO identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+  FYECO identifier:
+    from_schema: https://w3id.org/MySchema
+    typeof: string
+enums:
+  provided_by_enum:
+    from_schema: https://w3id.org/MySchema
+    permissible_values:
+      hgnc_gene_nodes:
+        description: hgnc_gene_nodes
+      phenio_nodes:
+        description: phenio_nodes
+      reactome_pathway_nodes:
+        description: reactome_pathway_nodes
+      pombase_gene_nodes:
+        description: pombase_gene_nodes
+      alliance_gene_nodes:
+        description: alliance_gene_nodes
+      ncbi_gene_nodes:
+        description: ncbi_gene_nodes
+  knowledge_source_enum:
+    from_schema: https://w3id.org/MySchema
+    permissible_values:
+      Graph:
+        description: Graph
+  negated_enum:
+    from_schema: https://w3id.org/MySchema
+    permissible_values:
+      'True':
+        description: 'True'
+slots:
+  id:
+    examples:
+    - value: PomBase:SPSNRNA.07
+    from_schema: https://w3id.org/MySchema
+    range: identifier
+  category:
+    examples:
+    - value: biolink:Gene
+    from_schema: https://w3id.org/MySchema
+    range: biolink identifier
+  description:
+    examples:
+    - value: Abnormal(ly) increased amount (of) osteoclast.
+    from_schema: https://w3id.org/MySchema
+    multivalued: true
+    range: string
+  provided_by:
+    examples:
+    - value: pombase_gene_nodes
+    from_schema: https://w3id.org/MySchema
+    range: provided_by_enum
+  in_taxon:
+    examples:
+    - value: NCBITaxon:4896
+    from_schema: https://w3id.org/MySchema
+    range: NCBITaxon identifier
+  symbol:
+    examples:
+    - value: snu32
+    from_schema: https://w3id.org/MySchema
+    range: string
+  name:
+    examples:
+    - value: taxi
+    from_schema: https://w3id.org/MySchema
+    range: string
+  xref:
+    examples:
+    - value: UniProtKB:P10842
+    from_schema: https://w3id.org/MySchema
+    multivalued: true
+    range: identifier
+  synonym:
+    examples:
+    - value: snu3B
+    from_schema: https://w3id.org/MySchema
+    multivalued: true
+    range: string
+  source:
+    examples:
+    - value: infores:flybase
+    from_schema: https://w3id.org/MySchema
+    range: infores identifier
+  synonyms:
+    from_schema: https://w3id.org/MySchema
+    range: string
+  type:
+    examples:
+    - value: SO:0001267
+    from_schema: https://w3id.org/MySchema
+    range: SO identifier
+  original_subject:
+    examples:
+    - value: OMIM:611705
+    from_schema: https://w3id.org/MySchema
+    range: identifier
+  predicate:
+    examples:
+    - value: biolink:has_phenotype
+    from_schema: https://w3id.org/MySchema
+    range: biolink identifier
+  original_object:
+    examples:
+    - value: OMIM:181500
+    from_schema: https://w3id.org/MySchema
+    range: identifier
+  aggregator_knowledge_source:
+    examples:
+    - value: infores:monarchinitiative
+    from_schema: https://w3id.org/MySchema
+    multivalued: true
+    range: infores identifier
+  primary_knowledge_source:
+    examples:
+    - value: infores:pombase
+    from_schema: https://w3id.org/MySchema
+    range: infores identifier
+  publications:
+    examples:
+    - value: PMID:11676915
+    from_schema: https://w3id.org/MySchema
+    multivalued: true
+    range: identifier
+  has_evidence:
+    examples:
+    - value: ECO:0000266
+    from_schema: https://w3id.org/MySchema
+    multivalued: true
+    range: identifier
+  stage_qualifier:
+    examples:
+    - value: ZFS:0000035
+    from_schema: https://w3id.org/MySchema
+    range: identifier
+  relation:
+    examples:
+    - value: rdfs:subClassOf
+    from_schema: https://w3id.org/MySchema
+    range: identifier
+  knowledge_source:
+    examples:
+    - value: Graph
+    from_schema: https://w3id.org/MySchema
+    range: knowledge_source_enum
+  frequency_qualifier:
+    examples:
+    - value: HP:0040283
+    from_schema: https://w3id.org/MySchema
+    range: string
+  negated:
+    examples:
+    - value: 'True'
+    from_schema: https://w3id.org/MySchema
+    range: negated_enum
+  onset_qualifier:
+    examples:
+    - value: HP:0011461
+    from_schema: https://w3id.org/MySchema
+    range: HP identifier
+  sex_qualifier:
+    examples:
+    - value: PATO:0000384
+    from_schema: https://w3id.org/MySchema
+    range: PATO identifier
+  qualifiers:
+    examples:
+    - value: FYECO:0000137|FYECO:0000005
+    from_schema: https://w3id.org/MySchema
+    multivalued: true
+    range: FYECO identifier
+  subject:
+    examples:
+    - value: PomBase:SPCC1739.11c
+    from_schema: https://w3id.org/MySchema
+    range: identifier
+  object:
+    examples:
+    - value: FYPO:0002967
+    from_schema: https://w3id.org/MySchema
+    range: identifier
+classes:
+  monarch-kg_nodes:
+    from_schema: https://w3id.org/MySchema
+    slots:
+    - id
+    - category
+    - description
+    - provided_by
+    - in_taxon
+    - symbol
+    - name
+    - xref
+    - synonym
+    - source
+    - synonyms
+    - type
+  monarch-kg_edges:
+    from_schema: https://w3id.org/MySchema
+    slots:
+    - id
+    - original_subject
+    - predicate
+    - original_object
+    - category
+    - aggregator_knowledge_source
+    - primary_knowledge_source
+    - publications
+    - provided_by
+    - has_evidence
+    - stage_qualifier
+    - relation
+    - knowledge_source
+    - frequency_qualifier
+    - negated
+    - onset_qualifier
+    - sex_qualifier
+    - qualifiers
+    - subject
+    - object
+
