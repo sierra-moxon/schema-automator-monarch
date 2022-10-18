@@ -110,6 +110,17 @@ html5lib = ["html5lib"]
 lxml = ["lxml"]
 
 [[package]]
+name = "biolink-model"
+version = "3.0.3"
+description = "'A high level datamodel of biological entities and associations'"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+linkml = "*"
+
+[[package]]
 name = "bioregistry"
 version = "0.5.124"
 description = "Integrated registry of biological databases and nomenclatures"
@@ -2305,7 +2316,7 @@ docs = []
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "be31c38b3fcc07c3e027fa3006aef1bd4c172a2a743289cd41dae1ee4907d5a0"
+content-hash = "abe22f3319bda176774a25186bbd818a3067dc6f75b88434bf8bbc56cd808c1a"
 
 [metadata.files]
 aiohttp = []
@@ -2341,6 +2352,7 @@ beautifulsoup4 = [
     {file = "beautifulsoup4-4.11.1-py3-none-any.whl", hash = "sha256:58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30"},
     {file = "beautifulsoup4-4.11.1.tar.gz", hash = "sha256:ad9aa55b65ef2808eb405f46cf74df7fcb7044d5cbc26487f96eb2ef2e436693"},
 ]
+biolink-model = []
 bioregistry = []
 cachetools = [
     {file = "cachetools-5.2.0-py3-none-any.whl", hash = "sha256:f9f17d2aec496a9aa6b76f53e3b614c965223c061982d434d160f930c698a9db"},
